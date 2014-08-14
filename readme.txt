@@ -27,7 +27,7 @@ or report any issues or modifications.
 
 
 == Installation ==
-* Upload `cptr-relation` folder to the `/wp-content/plugins/` directory
+* Upload `custom-post-type-relations` folder to the `/wp-content/plugins/` directory
 * Activate the plugin through the 'Plugins' menu in WordPress
 
 == Frequently Asked Questions ==
@@ -44,11 +44,11 @@ data. They are `cptr_get_relations_ids` and `cptr_get_relations`.
 `cptr_get_relations_ids($cptr_keys, $post_id = null)`
     
 
-`$cptr_keys` can be string or array. You will get the key of each relation in the admin 
+First parameter `$cptr_keys` can be string or array. You will get the key of each relation in the admin 
 page for CPT Relation plugin. This argument can also have the value `all` 
 which will return all the defined relations for that post.
 
-$post_id should be int. If this is not provided current post is considered.
+Second parameter `$post_id` should be int. If this is not provided current post is considered.
 
 = Where to submit any issues and get support? =
 
