@@ -1,0 +1,63 @@
+=== Custom Post Type Relations ===
+Contributors: alxjos
+Tags: post, relations, custom post type, post types
+Requires at least: 3.0.1
+Tested up to: 3.9.2
+Stable tag: trunk
+License: GPLv2
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+
+Define relations with different post types in WordPress and access the related 
+posts in the template files.
+
+== Description ==
+
+Custom Post Type (CPT) Relations plugin can be used to create relations within 
+different post types in your WordPress.
+
+CPT Relations will list all the registered post types in the wordpress and you 
+can create any number of relations for any post type. Once a relation is created, 
+you will see a metabox with autocomplete field in the Add New page of the 
+selected post type. The field will populate the via AJAX while you type the 
+post name you want to related.
+
+CPT Relations is an open source project hosted in GitHub. Those who are 
+interested can join the development team at https://github.com/GingerCodes/cpt-relations/ 
+or report any issues or modifications. 
+
+
+== Installation ==
+* Upload `cptr-relation` folder to the `/wp-content/plugins/` directory
+* Activate the plugin through the 'Plugins' menu in WordPress
+
+== Frequently Asked Questions ==
+
+= Is there any limit for the number of relations that can be created? =
+
+No. You can create any number of relations as much as you need.
+
+= How can you get the relations data in the template files =
+
+There are two theme function provided with the plugin for access the relations 
+data. They are `cptr_get_relations_ids` and `cptr_get_relations`.
+
+`cptr_get_relations_ids($cptr_keys, $post_id = null)`
+    
+
+`$cptr_keys` can be string or array. You will get the key of each relation in the admin 
+page for CPT Relation plugin. This argument can also have the value `all` 
+which will return all the defined relations for that post.
+
+$post_id should be int. If this is not provided current post is considered.
+
+= Where to submit any issues and get support? =
+
+CPT Relations in an open source project hosted in the GitHub. You can raise any issues at https://github.com/GingerCodes/cpt-relations/issues.
+
+ == Screenshots ==
+
+1. Create Relations by giving a name and selection the post types from the select box.
+2. Select the posts for the created relations. The input field is auto-complete enabled with populating posts from the related post type.
+3. Can select multiple posts for a single relation itself.
+4. Example code for displaying the relations in the template file inside the loop.
+5. Related posts displayed in the post.
