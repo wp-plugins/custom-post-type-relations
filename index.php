@@ -1,15 +1,18 @@
 <?php
 
 /**
-  @package CPT_Relations
-  @version 1.0
-  Plugin Name: Custom Post Type Relations
-  Plugin URI: http://wordpress.org/plugins/custom-post-type-relations/
-  Description: Custom Post Type (CPT) Relations plugin can be used to create relations within different post types in your WordPress. 
+ * @package CPT_Relations
+ * @version 1.6
+ */
+/*
+  Plugin Name: CPT Relations
+  Plugin URI: http://gingercodes.com/cpt-relations
+  Description: Plugin to define relations with different post types in WordPress.
   Author: Alex Jose
-  Version: 1.0
+  Version: 0.2
   Author URI: http://alexjose.in/
  */
+
 define('CPTR_DEBUG', false);
 define('CPTR_PLUGIN_DIR', plugin_dir_path(__FILE__));
 define('CPTR_PLUGIN_URL', plugin_dir_url(__FILE__));
@@ -39,3 +42,5 @@ function cptr_enqueue_scripts($hook) {
         wp_enqueue_style('autoSuggest-fb-theme', CPTR_PLUGIN_URL . 'assets/css/token-input-facebook.css');
     }
 }
+
+
