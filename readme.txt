@@ -1,5 +1,5 @@
 === Custom Post Type Relations ===
-Contributors: alxjos, rogin
+Contributors: alexjose, rogin
 Tags: post, relations, custom post type
 Requires at least: 3.0.1
 Tested up to: 4.1
